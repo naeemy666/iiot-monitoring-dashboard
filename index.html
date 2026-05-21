@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Industrial IoT Monitoring Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1 class="header">Industrial IoT Monitoring Dashboard</h1>
+
+    <div class="dashboard">
+
+        <div class="card">
+            <h2>Temperature</h2>
+            <p id="temperature">-- °C</p>
+        </div>
+
+        <div class="card">
+            <h2>Humidity</h2>
+            <p id="humidity">-- %</p>
+        </div>
+
+        <div class="card">
+            <h2>Machine Status</h2>
+            <p id="machineStatus">Stopped</p>
+        </div>
+
+        <div class="card">
+            <h2>Alarm</h2>
+            <p id="alarmStatus">No Alarm</p>
+        </div>
+
+    </div>
+
+    <button onclick="updateData()">Simulate Sensor Data</button>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
